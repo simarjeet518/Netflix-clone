@@ -3,10 +3,11 @@ import Row from "./componets/Row";
 import requests from "./request";
 import "./App.css";
 import Banner from "./componets/Banner";
+import Nav from "./componets/Nav";
 function App() {
   return (
     <div className="App">
-      {/* Navebar */}
+      <Nav />
       <Banner />
 
       <Row
@@ -14,19 +15,12 @@ function App() {
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true}
       />
-
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
-
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
-
       <Row title="Action Movies" fetchUrl={requests.fectchActionMovies} />
-
       <Row title="Comedy Movies" fetchUrl={requests.fectchComedyMovies} />
-
       <Row title="Horror Movies" fetchUrl={requests.fectchHorrorMovies} />
-
       <Row title="Romance Movies" fetchUrl={requests.fectchRomanceMovies} />
-
       <Row title="Documentaries" fetchUrl={requests.fectchDocumentaries} />
     </div>
   );
