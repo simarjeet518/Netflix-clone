@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-
+![product](https://github.com/simarjeet518/Netflix-clone/blob/master/docs/netflix.png?raw=true)
 
 ### `npm start`
 
